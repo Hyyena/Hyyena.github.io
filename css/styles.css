@@ -91,7 +91,11 @@ p {
 
 abbr[title],
 abbr[data-original-title] {
+<<<<<<< HEAD
   text-decoration: none;
+=======
+  text-decoration: underline;
+>>>>>>> 611f1a1815ac61acd8172bafcc65e1517fa9b6a2
   -webkit-text-decoration: underline dotted;
           text-decoration: underline dotted;
   cursor: help;
@@ -165,7 +169,11 @@ a {
 }
 a:hover {
   color: #824027;
+<<<<<<< HEAD
   text-decoration: none;
+=======
+  text-decoration: underline;
+>>>>>>> 611f1a1815ac61acd8172bafcc65e1517fa9b6a2
 }
 
 a:not([href]) {
