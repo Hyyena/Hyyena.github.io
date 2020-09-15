@@ -39,4 +39,27 @@
     $("body").scrollspy({
         target: "#sideNav",
     });
+
+    // Scroll Top & Scroll Bottom
+        $( document ).ready( function() {
+            $( window ).scroll( function() {
+                if ( $( this ).scrollTop() > 200 ) {
+                    $( '.scrllT' ).fadeIn();
+                    $( '.scrllB' ).fadeIn();
+                } else {
+                    $( '.scrllT' ).fadeOut();
+                    $( '.scrllB' ).fadeOut();
+                }
+            } );
+            $( '.scrllT' ).click( function() {
+                $( 'html, body' ).animate( { scrollTop : 0 }, 1000 );
+                return false;
+            } );
+            var scrollHeight = $( document ).height();
+            $( '.scrllB').click( function() {
+                $( 'html, body' ).animate( { scrollTop: scrollHeight }, 1000 );
+                return false;
+            } );
+        } );
+
 })(jQuery); // End of use strict

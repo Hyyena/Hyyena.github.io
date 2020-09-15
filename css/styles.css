@@ -1131,6 +1131,9 @@ pre code {
   .col-md-7 {
     flex: 0 0 58.3333333333%;
     max-width: 58.3333333333%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .col-md-8 {
@@ -2438,9 +2441,31 @@ textarea.form-control {
   }
 }
 
+.scrllT {
+    position: fixed;
+    left: 88%;
+    bottom: 70px;
+    display: none;
+    height: 3.5rem;
+    width: 3.5rem;
+    border-radius: 100%;
+    font-size: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.scrllB {
+    position: fixed;
+    left: 88%;
+    bottom: 50px;
+    display: none;
+    border-radius: 100%;
+    font-size: 1.5rem;
+    margin-right: 1.5rem;
+}
+
 .btn {
   display: inline-block;
-  font-weight: 400;
+  font-weight: 700;
   color: #212529;
   text-align: center;
   vertical-align: middle;
